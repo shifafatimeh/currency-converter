@@ -1,0 +1,90 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: goldenrod;
+}
+.container {
+  background-color: #fff;
+  padding: 2rem;
+  width: 50vh;
+  border-radius: 1rem;
+  min-height: 45vh;
+  border: 7px solid #59114d;
+}
+h2 {
+  text-align: center;
+  color: #59114d;
+  background-color: goldenrod;
+  border: 2px solid #59114d;
+  border-radius: 1rem;
+}
+.size {
+  font-size: 20px;
+}
+form {
+  margin: 2rem 0 1rem 0;
+}
+form select,
+button,
+input {
+  width: 100%;
+  border: none;
+  margin: none;
+}
+form input {
+  border: 2px solid #59114d;
+  height: 30px;
+  padding-left: 8px;
+  font-size: 17px;
+}
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+.selectContainer img {
+  max-width: 2.5rem;
+}
+.selectContainer {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+
+  border-radius: 1rem;
+  width: 6rem;
+  border: 1px solid #59114d;
+  padding-left: 7px;
+}
+
+.dropdown i {
+  font-size: 1.7rem;
+  margin-top: 3rem;
+  color: #59114d;
+}
+.selectContainer select {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.point {
+  cursor: pointer;
+}
+.msg {
+  margin: 2rem 0 2rem 0;
+  font-size: 20px;
+  border-radius: 1rem;
+  border: 1px solid #59114d;
+  background-color: goldenrod;
+  text-align: center;
+}
+button {
+  background-color: #59114d;
+  color: #fff;
+  height: 4rem;
+  border-radius: 1rem;
+  border: 5px solid goldenrod;
+  font-size: 20px;
+  cursor: pointer;
+}
