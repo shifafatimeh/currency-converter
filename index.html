@@ -19,13 +19,14 @@
       <form>
         <div class="amount">
           <p class="size">Enter Amount</p>
-          <input value="1" type="text" />
+          <input value="1" type="number" />
         </div>
         <div class="dropdown">
           <div class="from">
             <p>FROM</p>
             <div class="selectContainer">
-              <img src="https://flagsapi.com/US/flat/64.png" />
+              <div id="loader">Loading...</div>
+              <img id="image" src="https://flagsapi.com/US/flat/64.png" />
               <select name="from"></select>
             </div>
           </div>
@@ -33,7 +34,8 @@
           <div class="to">
             <p>TO</p>
             <div class="selectContainer">
-              <img src="https://flagsapi.com/IN/flat/64.png" />
+              <div id="loader">Loading...</div>
+              <img id="image" src="https://flagsapi.com/IN/flat/64.png" />
               <select name="to"></select>
             </div>
           </div>

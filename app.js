@@ -5,6 +5,8 @@ const btn = document.querySelector("button");
 const frombtn = document.querySelector(".from select");
 const tobtn = document.querySelector(".to select");
 const message = document.querySelector(".msg");
+const image = document.querySelector("#image");
+const loader = document.querySelector("#loader");
 window.addEventListener("load", () => {
   loadedPage();
 });
@@ -21,7 +23,7 @@ for (let select of dropdown) {
     select.append(newOption);
     select.classList.add("point");
   }
-  select.addEventListener("click", (ele) => {
+  select.addEventListener("changè", (ele) => {
     changeOption(ele.target);
   });
 }
@@ -54,3 +56,16 @@ const loadedPage = async () => {
   let finalAmount = amountEnter * restData;
   message.innerText = `${amnt.value} ${frombtn.value} = ${finalAmount} ${tobtn.value}`;
 };
+
+let loadingImage = () => {
+  image.addEventListener("load", function () {
+    loader.style.display = "none";
+  });
+  image.addEventListener("progress", function (event) {
+    loader.style.display = "flex";
+  });
+  image.addEventListener("error", function () {
+    loader.innerHTML = "Error loading image";
+  });
+};
+loadingImage();
