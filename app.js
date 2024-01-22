@@ -23,7 +23,7 @@ for (let select of dropdown) {
     select.append(newOption);
     select.classList.add("point");
   }
-  select.addEventListener("changè", (ele) => {
+  select.addEventListener("change", (ele) => {
     changeOption(ele.target);
   });
 }
